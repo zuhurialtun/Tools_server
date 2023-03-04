@@ -1,0 +1,41 @@
+{
+  "name": "tools_server",
+  "version": "1.0.0",
+  "description": "Javascript and python combine tools nodejs server.",
+  "main": "islevler.js",
+  "dependencies": {
+    "asynckit": "^0.4.0",
+    "delayed-stream": "^1.0.0",
+    "base64-js": "^1.5.1",
+    "fs-extra": "^10.0.1",
+    "form-data": "^4.0.0",
+    "ieee754": "^1.2.1",
+    "combined-stream": "^1.0.8",
+    "jsonfile": "^6.1.0",
+    "mime-db": "^1.49.0",
+    "graceful-fs": "^4.2.8",
+    "node-fetch": "^2.6.1",
+    "mime-types": "^2.1.32",
+    "pidusage": "^2.0.21",
+    "safe-buffer": "^5.2.1",
+    "sync-fetch": "^0.3.0",
+    "buffer": "^5.7.1",
+    "universalify": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuhurialtun/Tools_server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zuhurialtun/Tools_server/issues"
+  },
+  "homepage": "https://github.com/zuhurialtun/Tools_server#readme"
+}
