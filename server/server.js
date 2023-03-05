@@ -2,7 +2,7 @@
 const http = require('http');
 // const _kurulum = require('./kurulum');
 
-const _python = require('./server/worker/py-denetcisi');
+const _python = require('./worker/py-denetcisi');
 
 const server = http.createServer((request, response) => {
         // kullanici daha az yetkisi olan "denetci"ye donusturuluyor
@@ -26,13 +26,13 @@ const server = http.createServer((request, response) => {
             request.on('end', () => {
                 // duzenleyici icerigi belgeye yaziliyor
                 gelen = JSON.parse(gelen);
-                console.log('gelen:')
-                console.log(gelen)
-                if(gelen.process == 'merge_pdf'){
-                    _python.giden(gelen.process, response);
+                // console.log('gelen:');
+                // console.log(gelen);
+                if(gelen.process != 'NULL'){
+                    _python.giden(gelen, response);
                 }
                 else{
-                    _python.giden('testBanana.png', response);
+                    _python.giden('NULL', response);
                 }
                 console.log('----------------------------------')
             });
