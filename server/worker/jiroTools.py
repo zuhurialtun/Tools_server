@@ -24,5 +24,7 @@ def merge_pdf():
 
 if PROCESS == 'merge_pdf':
     merge_pdf()
+elif PROCESS == 'read_pdf':
+    pass
 else:
     print('NULL')
